@@ -1,0 +1,30 @@
+header{
+    background-color: antiquewhite;
+    padding: 0;
+    border-bottom: 1px solid #e72929;
+}
+a{
+    color:#af1313
+}
+a:hover{
+    background-color: #e72929;
+    color: white;
+}
+.container{
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+}
+a.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 1em;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 1em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

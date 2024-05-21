@@ -1,0 +1,26 @@
+<div class="loginPage">
+  <form>
+    <div class="row mb-3">
+      <label for="userid" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-5">
+        <input type="email" class="form-control" id="userid" #userId>
+        <span id="emailNotFound" style="display:none; color: red;">Sorry, didn't find your email</span>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="password" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-5 position-relative">
+        <input class="form-control" type="{{ showPassword ? 'text' : 'password' }}" id="password" name="password"
+          #password required />
+        <span class="password-toggle-icon" (click)="togglePasswordVisibility()">
+          {{ showPassword ? '🙈' : '👁️' }}
+        </span>
+        <span id="passwordNotFound" style="display:none; color: red;">Your password is incorrect</span>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="login(userId.value, password.value)">Sign in</button>
+  </form>
+  <div>
+    <a class="text-primary-emphasis" (click)="register()">If you don't have Registered</a>
+  </div>
+</div>

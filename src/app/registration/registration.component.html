@@ -1,0 +1,130 @@
+<div class="registerPage">
+    <form [formGroup]="signupForm" (ngSubmit)="postData(signupForm)" class="row g-2">
+        <div class="col-md-5">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstname" formControlName="fname">
+        </div>
+        <div class="col-md-5">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastname"  formControlName="lname">
+        </div>
+        <div class="col-md-5">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" formControlName="email">
+        </div>
+        <div class="col-md-5  position-relative">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="{{ showPassword ? 'text' : 'password' }}" class="form-control" id="password" name="password" formControlName="pass" #password >
+          <span class="password-toggle-icon" (click)="togglePasswordVisibility()">
+            {{ showPassword ? '🙈' : '👁️' }}
+          </span>
+        </div>
+        <div class="col-10">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" formControlName="city">
+        </div>
+        <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-md-4">
+            <label for="inputNumber" class="form-label">Contect Number</label>
+            <input type="number" class="form-control" id="inputNumber" formControlName="moNumber">
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Check me out
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button  type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+    </form>
+    <div><a class="text-primary-emphasis" (click)="login()">if you have already LoginId</a></div>
+</div>
+
+
+
+<!-- 
+<div id="RegistrationForm">
+    <form [formGroup]="signupForm" (ngSubmit)="postData(signupForm)">
+        <h3>Registration Form</h3>
+        <div class="line-element">
+            <span class="label_text label1">First Name</span>
+            <input type="text" class="form-control input1" formControlName="fname">
+
+            <span class="label_text label2">Last Name</span>
+            <input type="text" class="form-control input2" formControlName="lname">
+        </div>
+        <div class="line-element">
+            <span class="label_text label5">Phone No.</span>
+            <input type="number" class="form-control input5" formControlName="moNumber">
+
+            <span class="label_text label6">City</span>
+            <input type="text" class="form-control input6" formControlName="city">
+        </div>
+        <div class="line-element">
+            <span class="label_text label3">EmailId</span>
+            <input type="email" class="form-control input3" formControlName="email">
+            <span class="label_text label4">Password</span>
+            <input type="password" class="form-control input4" formControlName="pass">
+            <span class="passwordMassage" *ngIf="hasError('pass', 'minlength')">Password must be at least 6 characters
+                long</span>
+            <span class="passwordMassage" *ngIf="hasError('pass', 'maxlength')">Password must be less than 10
+                characters</span>
+        </div>
+        <div class="oneline">
+            <button class="btn btn-lg btn-success MG" type="submit" [disabled]="!signupForm.valid">Register</button>
+        </div>
+    </form>
+    <div class="oneline">
+        <button class="btn btn-primary" (click)="reset()">Auto-Reset</button>
+        <button class="btn btn-danger MG" (click)="clear()">Clear</button>
+    </div>
+    <div class="line-element buttonSummary">
+        If you have already logIn Id:
+        <button class="btn btn-primary btn-sm" (click)="goToLogin()">log-in</button>
+    </div>
+
+
+    <div id="registeredDetails">
+    <h3>Registration successful</h3>
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <td>{{firstname}} {{lastname}}</td>
+        </tr>
+        <tr>
+            <th>Mobile number</th>
+            <td>{{phoneNumber}}</td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td>{{city}}</td>
+        </tr>
+        <tr>
+            <th>Gmail Id</th>
+            <td>{{emailId}}</td>
+        </tr>
+        <tr>
+            <th>Password</th>
+            <td>{{password}}</td>
+        </tr>
+    </table>
+    <button class="btn btn-info" (click)="goToLogin()">Done and logIn</button>
+</div>
+</div> -->

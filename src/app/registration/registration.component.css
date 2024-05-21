@@ -1,0 +1,16 @@
+.registerPage{
+    margin: 30px 50px;
+}
+.position-relative {
+    position: relative;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+  }
+  

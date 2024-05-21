@@ -19,6 +19,8 @@ export class FoodService {
         imageUrl: './assets/food-1.jpg',
         cookTimes: '15-20',
         origin: ['india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 2,
@@ -30,6 +32,8 @@ export class FoodService {
         imageUrl: './assets/food-2.jpg',
         cookTimes: '16-18',
         origin: ['australia', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 3,
@@ -41,6 +45,8 @@ export class FoodService {
         imageUrl: './assets/food-3.jpg',
         cookTimes: '20-25',
         origin: ['south', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 4,
@@ -52,6 +58,8 @@ export class FoodService {
         imageUrl: './assets/food-4.jpg',
         cookTimes: '20-22',
         origin: ['india', 'australia', 'china', 'russia', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 5,
@@ -63,6 +71,8 @@ export class FoodService {
         imageUrl: './assets/food-5.jpg',
         cookTimes: '15-20',
         origin: ['india', 'australia', 'china', 'russia', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 6,
@@ -74,6 +84,8 @@ export class FoodService {
         imageUrl: './assets/food-6.jpg',
         cookTimes: '20-25',
         origin: ['rajasthan', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 7,
@@ -85,6 +97,8 @@ export class FoodService {
         imageUrl: './assets/food-7.jpg',
         cookTimes: '25-30',
         origin: ['amritsar', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 8,
@@ -96,6 +110,8 @@ export class FoodService {
         imageUrl: './assets/food-8.png',
         cookTimes: '20-25',
         origin: ['gujarati', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 9,
@@ -107,6 +123,8 @@ export class FoodService {
         imageUrl: './assets/food-9.jpg',
         cookTimes: '20-25',
         origin: ['china', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 10,
@@ -118,6 +136,8 @@ export class FoodService {
         imageUrl: './assets/food-10.jpg',
         cookTimes: '20-25',
         origin: ['china', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 11,
@@ -129,6 +149,8 @@ export class FoodService {
         imageUrl: './assets/food-11.jpg',
         cookTimes: '20-25',
         origin: ['china', 'australia', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 12,
@@ -140,6 +162,8 @@ export class FoodService {
         imageUrl: './assets/food-12.jpg',
         cookTimes: '10-15',
         origin: ['china', 'australia', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 13,
@@ -151,6 +175,8 @@ export class FoodService {
         imageUrl: './assets/food-13.jpg',
         cookTimes: '15-20',
         origin: ['china', 'australia', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 14,
@@ -162,6 +188,8 @@ export class FoodService {
         imageUrl: './assets/food-14.jpg',
         cookTimes: '10-15',
         origin: ['australia', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 15,
@@ -173,6 +201,8 @@ export class FoodService {
         imageUrl: './assets/food-15.jpg',
         cookTimes: '15-20',
         origin: ['china', 'australia', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 16,
@@ -184,6 +214,8 @@ export class FoodService {
         imageUrl: './assets/food-16.jpg',
         cookTimes: '20-25',
         origin: ['india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 17,
@@ -195,6 +227,8 @@ export class FoodService {
         imageUrl: './assets/food-17.jpg',
         cookTimes: '20-25',
         origin: ['china', 'australia', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 18,
@@ -206,6 +240,8 @@ export class FoodService {
         imageUrl: './assets/food-18.jpg',
         cookTimes: '10-15',
         origin: ['china', 'india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 19,
@@ -217,6 +253,8 @@ export class FoodService {
         imageUrl: './assets/food-19.jpg',
         cookTimes: '20-25',
         origin: ['india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 20,
@@ -228,6 +266,8 @@ export class FoodService {
         imageUrl: './assets/food-20.jpg',
         cookTimes: '10-15',
         origin: ['india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 21,
@@ -239,6 +279,8 @@ export class FoodService {
         imageUrl: './assets/food-21.jpg',
         cookTimes: '10-15',
         origin: ['india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 22,
@@ -250,6 +292,8 @@ export class FoodService {
         imageUrl: './assets/food-22.jpg',
         cookTimes: '12-15',
         origin: ['india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 23,
@@ -261,6 +305,8 @@ export class FoodService {
         imageUrl: './assets/food-23.jpg',
         cookTimes: '14-18',
         origin: ['india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 24,
@@ -272,6 +318,8 @@ export class FoodService {
         imageUrl: './assets/food-24.jpg',
         cookTimes: '10-15',
         origin: ['india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 25,
@@ -283,6 +331,8 @@ export class FoodService {
         imageUrl: './assets/food-25.jpg',
         cookTimes: '12-17',
         origin: ['india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 26,
@@ -294,6 +344,8 @@ export class FoodService {
         imageUrl: './assets/food-26.jpg',
         cookTimes: '12-16',
         origin: ['china', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 27,
@@ -305,6 +357,8 @@ export class FoodService {
         imageUrl: './assets/food-27.jpg',
         cookTimes: '15-19',
         origin: ['hyderabad','india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
       {
         id: 28,
@@ -316,6 +370,8 @@ export class FoodService {
         imageUrl: './assets/food-28.jpg',
         cookTimes: '18-22',
         origin: ['india', 'asia'],
+        addedToCart:false,
+        addedCount:0,
       },
     ];
   }

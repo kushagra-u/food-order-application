@@ -8,4 +8,6 @@ export class Foods {
   imageUrl!: string;
   cookTimes!: string;
   origin!: string[];
+  addedToCart: boolean=true;
+  addedCount!:number;
 }

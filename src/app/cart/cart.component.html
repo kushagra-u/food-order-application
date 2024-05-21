@@ -1,0 +1,44 @@
+ <div class="container">
+    <div class="right-column">
+      <div class="order-summary">
+        <h2>Your Order</h2>
+        <table>
+          <tr>
+            <th>Items</th>
+            <th>Price</th>
+          </tr>
+          <tr *ngFor="let item of cartItems">
+            <td>{{ item.name }}</td>
+            <td>{{ item.price | currency }}</td>
+          </tr>
+          <tr>
+            <td colspan="2">Total price = {{ totalPrice | currency }}</td>
+          </tr>
+        </table>
+        <button (click)="logInpage()">Place to Order</button>
+      </div>
+    </div>
+    <div class="left-column">
+      <div class="header">
+        <h1>Your all added food items</h1>
+      </div>
+      <div *ngIf="cartItems.length > 0; else emptyCart" class="cart-items-container">
+        <ul>
+          <li *ngFor="let item of cartItems" class="cart-item">
+            <div class="img-item">
+              <img src="{{ item.imageUrl }}" alt="food image" />
+            </div>
+            <div class="item-details">
+              <div class="name">{{ item.name }}</div>
+              <div class="price">{{ item.price | currency }}</div>
+              <button class="btn btn-danger" (click)="removeItemFromCart(item)">Remove</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ng-template #emptyCart>
+        <p class="no-item">You did not add any food item</p>
+      </ng-template>
+    </div>
+  </div>
+  

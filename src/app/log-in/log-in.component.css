@@ -1,0 +1,22 @@
+.loginPage {
+    margin: 50px 72px;
+}
+
+#emailNotFound, #passwordNotFound {
+    display: none;
+    color: red;
+    font-style: italic;
+}
+.position-relative {
+    position: relative;
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+  }
+  

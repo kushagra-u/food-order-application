@@ -1,75 +1,200 @@
-ul{
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Food Item Container */
+.foodItem {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+/* List and List Items */
+ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0;
     list-style-type: none;
+    margin: 0;
 }
-ul li a{
-    height: 19rem;
-    width: 17rem;
-    margin: 0.8rem;
-    border-radius: 1rem;
+
+li {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    color: #e72929;
+    transition: transform 0.3s;
+    flex: 0 1 calc(20% - 10px); /* Adjusted width for four items per row with small gaps */
+    margin: 15px 0; /* Adjusted margin for better spacing */
+}
+
+li:hover {
+    transform: translateY(-10px);
+}
+
+li a {
+    display: block;
     overflow: hidden;
 }
-li a:hover{
-    cursor: pointer;
-    opacity: 0.7;
+
+img {
+    width: 100%;
+    height: 200px; /* Adjust image height for desired appearance */
+    object-fit: cover;
+    display: block;
 }
-img{
-    height: 15rem;;
-    width: 17rem;
-}
-.content{
-    padding: .5rem 1rem;
+
+/* Content */
+.content {
+    padding: 5px;
     position: relative;
-}
-.favorite{
-    position: absolute;
-    top: .5rem;
-    right: 1rem;
-    font-size: 1.2rem;
-}
-.favorite.not{
-    color: black;
-}
-.product-item-footer{
+    flex-grow: 1;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
-.origins{
-    flex: 9;
+
+.name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #e72929;
 }
-.origins span{
-    border-radius: 2rem;
-    background-color: whitesmoke;
+
+.timeAndPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.cook-time,
+.price {
+    font-size: 1rem;
+    color: #e72929;
+}
+
+.favoriteAndOrigins {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.favorite {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #e72929;
+}
+
+.favorite.not {
     color: gray;
-    font-size: .8rem;
-    margin-right: .3rem;
-    display: inline-block;
 }
-.cook-time{
-    font-size: .8rem;
-    flex:3;
-    text-align: right;
+
+.origins {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
-.price{
-    color:gray;
-    margin: .2rem;
+
+.origins span {
+    background-color: #e0e0e0;
+    color: gray;
+    font-size: 0.8rem;
+    border-radius: 12px;
+    padding: 5px 10px;
 }
-.search-input {
-    width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  }
-  /* .form-control {
-    box-shadow: 0 10px 40px 0 #B0C1D9;
-  } */
-  /* .form-control::placeholder  {
-    font-family: FontAwesome;
-  } */
+
+/* Buttons */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3px;
+}
+
+button {
+    border-radius: 12px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 10px 0;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.btn-danger {
+    background-color: #e72929;
+    color: white;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-outline-success, .btn-outline-primary {
+    border: 1px solid transparent;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.added {
+    background-color: #28a745 !important;
+    color: white !important;
+    cursor: default;
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.added::after {
+    content: "Added to Cart!";
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    li {
+        flex: 0 1 calc(33.33% - 10px); /* Three items per row on medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    li {
+        flex: 0 1 calc(50% - 10px); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    li {
+        flex: 0 1 calc(100% - 10px); /* One item per row on extra small screens */
+    }
+}

@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+  height: calc(100vh - 40px);
+}
+
+.left-column,
+.right-column {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.left-column {
+  flex: 2;
+  overflow-y: auto;
+}
+
+.right-column {
+  flex: 1;
+  max-height: 100%;
+  overflow-y: auto;
+  position: sticky;
+  top: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-items-container {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.img-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1em;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.no-item {
+  text-align: center;
+  color: #888;
+}
+
+.order-summary {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:last-child {
+  font-weight: bold;
+}
+
+button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 0 10px;
+    gap: 10px;
+  }
+
+  .left-column, .right-column {
+    padding: 10px;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    gap: 5px;
+  }
+
+  .left-column, .right-column {
+    padding: 5px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .img-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-size: 1em;
+  }
+
+  .price {
+    font-size: 0.9em;
+  }
+}

@@ -3,7 +3,8 @@
     <div class="container-fluid">
       <a class="navbar-brand logo">TC Food Corner!</a>
       <form class="d-flex search-form" role="search" (ngSubmit)="search()">
-        <input class="form-control search-input" type="search" name="search" [(ngModel)]="searchItem" placeholder="Search Food here" aria-label="Search">
+        <input class="form-control search-input" type="search" name="search" (input)="onSearchInput()"
+          [(ngModel)]="searchItem" placeholder="Search Food here" aria-label="Search">
         <button class="btn btn-outline-success search-button" type="submit">Search</button>
       </form>
       <a class="navbar-link" routerLink="login">Log-In</a>

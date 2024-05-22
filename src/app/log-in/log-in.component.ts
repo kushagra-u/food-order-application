@@ -38,7 +38,6 @@ export class LogInComponent {
         this.notFoundEmail = document.getElementById('passwordNotFound');
         this.notFoundEmail.style.display = 'block'
       }
-      console.log('Index found:', getIndex);
     } else {
       this.notFoundEmail = document.getElementById('emailNotFound');
       this.notFoundEmail.style.display = 'block'

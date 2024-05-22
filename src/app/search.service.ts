@@ -12,5 +12,5 @@ export class SearchService {
 
   changeSearchTerm(term: string) {
     this.searchTerm.next(term);
-  }
+  };
 }

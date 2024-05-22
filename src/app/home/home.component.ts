@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
   foods: Foods[] = [];
   filteredFoods: Foods[] = [];
   added: number = 0;
-
   constructor(private fs: FoodService, private searchService: SearchService, private cartService: CartService) { }
 
   ngOnInit(): void {
